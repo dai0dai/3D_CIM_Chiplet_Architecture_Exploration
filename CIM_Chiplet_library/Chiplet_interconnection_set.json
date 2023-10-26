@@ -1,0 +1,79 @@
+{
+"Bare": {
+    "name"                       : "Bare",
+    "description"                : "basic board-level connection without any protocol",
+    "source_paper"               : "none, based on a 28nm technology",
+    "support_source_chiplet"     : ["all"],
+    "support_target_chiplet"     : ["all"],
+    "increase_area_per_chip_mm2" : 0.32,
+    "bandwidth_Gbps"             : 6.4,
+    "Energy_per_bit_fJ"          : 3750,
+    "total_connection_pins"      : 32,
+    "scaling"                    : "linear"
+}, 
+"HBM3": {
+    "name"                       : "HBM3",
+    "description"                : "HBM3",
+    "source_paper"               : "A 192-Gb 12-High 896-GB/s HBM3 DRAM with a TSV Auto-Calibration Scheme and Machine-Learning-Based Layout Optimization",
+    "support_source_chiplet"     : ["DRAM","all" ],
+    "support_target_chiplet"     : ["all" ,"DRAM"],
+    "increase_area_per_chip_mm2" : 10.8,
+    "bandwidth_Gbps"             : 7168,
+    "Energy_per_bit_fJ"          : 100,
+    "total_connection_pins"      : 1024,
+    "scaling"                    : "none",
+    "note"                       : "Energy_per_bit_fJ is not reported, use a an evaluate value instead"
+},
+"HBM2e": {
+    "name"                       : "HBM2e",
+    "description"                : "HBM2e",
+    "source_paper"               : "",
+    "support_source_chiplet"     : ["DRAM","all" ],
+    "support_target_chiplet"     : ["all" ,"DRAM"],
+    "increase_area_per_chip_mm2" : 5.4,
+    "bandwidth_Gbps"             : 3276.8,
+    "Energy_per_bit_fJ"          : 200,
+    "total_connection_pins"      : 1024,
+    "scaling"                    : "none",
+    "note"                       : "Energy_per_bit_fJ is not reported, use a an evaluate value instead"
+},
+"AMD_3D_IC": {
+    "name"                       : "AMD_3D_IC",
+    "description"                : "AMD_3D_IC",
+    "source_paper"               : "S. Sinha, IEDM, 2020",
+    "support_source_chiplet"     : ["all"],
+    "support_target_chiplet"     : ["all"],
+    "increase_area_per_chip_mm2" : 0.36,
+    "bandwidth_Gbps"             : 2457.6,
+    "Energy_per_bit_fJ"          : 21,
+    "total_connection_pins"      : 1024,
+    "scaling"                    : "linear",
+    "note"                       : "total_connection_pins is not reported, use a an evaluate value instead"
+},
+"Lakefield_Foveros": {
+    "name"                       : "Lakefield_Foveros",
+    "description"                : "Lakefield_Foveros",
+    "source_paper"               : "D. Ingerly, IEDM, 2019",
+    "support_source_chiplet"     : ["all"],
+    "support_target_chiplet"     : ["all"],
+    "increase_area_per_chip_mm2" : 2.5,
+    "bandwidth_Gbps"             : 128,
+    "Energy_per_bit_fJ"          : 150,
+    "total_connection_pins"      : 256,
+    "scaling"                    : "linear",
+    "note"                       : "total_connection_pins is not reported, use a an evaluate value instead"
+},
+"Ponte_Vecchio_Foveros_EMIB": {
+    "name"                       : "Ponte_Vecchio_Foveros_EMIB",
+    "description"                : "Ponte_Vecchio_Foveros_EMIB",
+    "source_paper"               : "W. Gomes, ISSCC 2022",
+    "support_source_chiplet"     : ["all"],
+    "support_target_chiplet"     : ["all"],
+    "increase_area_per_chip_mm2" : 2.65,
+    "bandwidth_Gbps"             : 256,
+    "Energy_per_bit_fJ"          : 150,
+    "total_connection_pins"      : 512,
+    "scaling"                    : "linear",
+    "note"                       : "total_connection_pins is not reported, use a an evaluate value instead"
+}
+}
