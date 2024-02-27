@@ -87,7 +87,7 @@
         "transfer_out_data_KB"     : 0,
         "transfer_out_data_type"   : "continuous",
         "previous_dependency":     [ "ini_load_weight", "layer_norm" ],
-		"next_operator":           [ "Matmul01", "Matmul02", "Matmul03", "Matmul04", "Matmul05", "Matmul06", "Matmul07", "Matmul08", "Matmul09", "Matmul010", "Matmul011", "Matmul012" ]
+		"next_operator":           [ "MatMul1", "MatMul2", "MatMul3", "MatMul4", "MatMul5", "MatMul6", "MatMul7", "MatMul8", "MatMul9", "MatMul10", "MatMul11", "MatMul12", "Matmul01", "Matmul02", "Matmul03", "Matmul04", "Matmul05", "Matmul06", "Matmul07", "Matmul08", "Matmul09", "Matmul010", "Matmul011", "Matmul012" ]
 	},
 	"MatMul1": {
         "name"                     : "MatMul1",
@@ -987,7 +987,7 @@
         "transfer_out_data_KB"     : 0,
         "transfer_out_data_type"   : "continuous",
         "previous_dependency":     [ "linear2" ],
-		"next_operator":           [ "layer_norm2" ]
+		"next_operator":           [ "layer_norm2",  "Matrix_add2"]
 	},
 	"layer_norm2": {
         "name"                     : "layer_norm2",
